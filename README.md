@@ -13,8 +13,8 @@ Springit
 
 * 123
 * 1234 
-* [Sptring boot 2](http://abc.ie)
-* **My name** [understand about me](http://achyut.ie)
+* [Sptring boot 2](http://)
+* **My name** [understand about me](http://)
 
 # Project title
 ## Get started
