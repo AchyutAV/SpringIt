@@ -1,8 +1,8 @@
 package com.achyut.springit.domain;
 
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import lombok.NonNull;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -14,7 +14,7 @@ import java.util.List;
 @Entity
 @Data
 @NoArgsConstructor
-public class Link {
+public class Link extends Auditable {
 
     @Id
     @GeneratedValue
