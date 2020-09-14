@@ -1,6 +1,7 @@
 package com.achyut.springit;
 
 import com.achyut.springit.config.SpringitProperties;
+import org.ocpsoft.prettytime.PrettyTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,10 +12,13 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Profile;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 import java.util.Arrays;
+import java.util.Date;
 
 @SpringBootApplication
+@EnableJpaAuditing
 //@EnableConfigurationProperties(SpringitProperties.class)
 public class SpringitApplication {
 
@@ -45,6 +49,11 @@ public class SpringitApplication {
 //				System.out.println(bean);
 			}
 		};
+	}
+
+	@Bean
+	PrettyTime prettyTime(){
+		return new PrettyTime();
 	}
 
 }
